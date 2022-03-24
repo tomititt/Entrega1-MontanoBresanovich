@@ -2,26 +2,25 @@ from django.db import models
 
 # Create your models here.
 
-class Curso(models.Model):
+class Asignatura(models.Model):
+
+    id = models.IntegerField(primary_key=True)
+    nombre = models.CharField(max_length=40)
+    clase = models.IntegerField()
+
+class Mago(models.Model):
 
     
     nombre = models.CharField(max_length=40)
-    camada = models.IntegerField(primary_key=True)
-
-class Estudiante(models.Model):
-
-    nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
-    email = models.EmailField(primary_key=True)
+    casa = models.CharField(max_length=40)
 
 class Profesor(models.Model):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
-    email = models.EmailField(primary_key=True)
-    profesion = models.CharField(max_length=60)
+    materia = models.CharField(max_length=60)
 
-class Entregable(models.Model):
+class Extasis(models.Model):
     id = models.IntegerField(primary_key=True)
     nombre = models.CharField(max_length=40)
-    fecha_entregado = models.DateField()
-    entregado = models.BooleanField()
+    aprobado = models.BooleanField()
