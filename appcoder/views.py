@@ -1,16 +1,23 @@
+from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+
+def inicio(request):
+    date_init = datetime.now()
+    dict_user = {"user": "tmonti", "date": date_init}
+    return render(request, "appcoder/index.html", dict_user)
+
 def magos(request):
-    return HttpResponse("vista de magos")
+    return render(request, "appcoder/magos.html")
 
 def asignaturas(request):
-    return HttpResponse("vista de asignaturas")
+    return render(request, "appcoder/asignaturas.html")
 
 def profesores(request):
-    return HttpResponse("vista de profesores")
+    return render(request, "appcoder/profesores.html")
 
 def extasis(request):
-    return HttpResponse("vista de extasis")
+    return render(request, "appcoder/extasis.html")
 
