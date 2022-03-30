@@ -3,10 +3,10 @@ from appcoder.views import *
 
 
 urlpatterns = [
-    path('', inicio),
-    path('magos/', magos),
-    path('asignaturas/', asignaturas),
-    path('profesores/', profesores),
-    path('extasis/', extasis),
+    path('', inicio, name = "Inicio"),
+    path('magos/', magos, name = "Magos"),
+    path('asignaturas/', asignaturas, name = "Asignaturas"),
+    path('profesores/', profesores, name = "Profesores"),
+    path('extasis/', extasis, name = "EXTASIS"),
     
 ]

@@ -14,22 +14,7 @@
         <link href="{% static 'appcoder/css/styles.css' %}" rel="stylesheet" />
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#!">Start Bootstrap</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Magos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Profesores</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Asignaturas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">EXTASIS</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        {% include 'appcoder/components/navbar.html' %}
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4">
             <div class="container">
@@ -78,9 +63,9 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled mb-0">
-                                        <li><a href="#!">Sitio Oficial</a></li>
-                                        <li><a href="#!">Wiki</a></li>
-                                        <li><a href="#!">Fandom</a></li>
+                                        <li><a href="https://www.wizardingworld.com/" target="_blank">Sitio Oficial</a></li>
+                                        <li><a href="https://es.wikipedia.org/wiki/Harry_Potter" target="_blank">Wiki</a></li>
+                                        <li><a href="https://harrypotter.fandom.com/es/wiki/HarryPotter_Wiki" target="_blank">Fandom</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-sm-6">
