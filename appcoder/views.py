@@ -1,6 +1,8 @@
 from datetime import datetime
 from django.http import HttpResponse
 from django.shortcuts import render
+from appcoder.forms import AsignaturasFormulario
+from appcoder.models import *
 
 # Create your views here.
 
@@ -20,4 +22,19 @@ def profesores(request):
 
 def extasis(request):
     return render(request, "appcoder/extasis.html")
+
+def formulario_asignatura(request):
+
+    if request.method == "POST":
+        asignatura = AsignaturasFormulario(request.POST)
+        print(asignatura)
+
+        if asignatura.is_valid:
+            data = asignatura.cleaned_data
+
+            asignatura_nueva = Asignatura(data['nombre'], data['clase'])
+            asignatura_nueva.save()
+
+
+    return render(request, 'appcoder/asignaturasFormulario.html')
 
