@@ -9,5 +9,8 @@ urlpatterns = [
     path('profesores/', profesores, name = "Profesores"),
     path('extasis/', extasis, name = "EXTASIS"),
     path('asignaturasformulario/', formulario_asignatura, name = 'Formulario'),
+    path('magosformulario/', formulario_magos, name = 'Formulario'),
+    path('profesoresformulario/', formulario_profesores, name = 'Formulario'),
+    path('buscamagos', busca_magos, name = 'Busqueda'),
     
 ]
