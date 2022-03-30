@@ -26,3 +26,5 @@ Sexto, lo subí con errores que estaba teniendo para poder analizarlo con mi tut
 Séptimo, agregué los 3 formularios para carga de datos en la db, 1 búsqueda en la página de magos
 que tendré que modificar asi la data la arroja en una página más ordenada.
 Comenté la barra de "busqueda" en base.html, para poder hacerla más funcional en un futuro 
+
+Quizás me equivoqué, pero por falta de tiempo no pude resolver. Luego de la url del runserver, siempre puse /appcoder/ y la url necesaria.
