@@ -27,4 +27,7 @@ Séptimo, agregué los 3 formularios para carga de datos en la db, 1 búsqueda e
 que tendré que modificar asi la data la arroja en una página más ordenada.
 Comenté la barra de "busqueda" en base.html, para poder hacerla más funcional en un futuro 
 
-Quizás me equivoqué, pero por falta de tiempo no pude resolver. Luego de la url del runserver, siempre puse /appcoder/ y la url necesaria.
+Quizás me equivoqué, pero por falta de tiempo no pude resolver:
+1. . Luego de la url del runserver, siempre puse /appcoder/ y la url necesaria
+2. . El tiempo se dejó de mostrar en las pestañas que no eran index.html
+3. . En mi pc, no me pidió migrations porque no eran necesarias, la búsqueda y todo funciona correctamente. Bajé el archivo desde GitHub para probarlo, lo abrí en VSCode, me pidió hacer 29 migraciones (las hice), y cuando puse buscar me tiró un error.
