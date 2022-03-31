@@ -31,3 +31,5 @@ Quizás me equivoqué, pero por falta de tiempo no pude resolver:
 1. . Luego de la url del runserver, siempre puse /appcoder/ y la url necesaria
 2. . El tiempo se dejó de mostrar en las pestañas que no eran index.html
 3. . En mi pc, no me pidió migrations porque no eran necesarias, la búsqueda y todo funciona correctamente. Bajé el archivo desde GitHub para probarlo, lo abrí en VSCode, me pidió hacer 29 migraciones (las hice), y cuando puse buscar me tiró un error.
+
+Pido disculpas al profe y tutores por el flojo tiempo, con la corrida del comienzo del curso me cruzó justo con el comienzo de la facultad y por la parte en que me encuentrro en la carrera se me está complicando mucho hacer malabares, prometo que para la entrega final puliré lo más posible todo!
